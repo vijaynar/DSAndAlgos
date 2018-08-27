@@ -12,8 +12,29 @@ namespace UnitTest
         [TestMethod]
         public void Test_quickSort()
         {
-            //QuickSort.SortRecursive(arr, 0, arr.Length - 1);
+            QuickSort.SortRecursive(arr, 0, arr.Length - 1);
             QuickSort.SortIterative(arr);
+            foreach (var i in arr)
+            {
+                Console.Write(i + " ");
+            }
+        }
+
+        [TestMethod]
+        public void Test_BubbleSort()
+        {
+            //BubbleSort.SortIterative(arr);
+            BubbleSort.SortRecursive(arr,arr.Length);
+            foreach (var i in arr)
+            {
+                Console.Write(i + " ");
+            }
+        }
+
+        [TestMethod]
+        public void Test_InsertionSort()
+        {
+            InsertionSort.SortIterative(arr);
             foreach (var i in arr)
             {
                 Console.Write(i + " ");

@@ -8,12 +8,18 @@ namespace Algos
 {
     /// <summary>
     /// Quick Sort in its general form is an in-place sort.
+    /// Quicksort is a comparison-based algorithm that uses divide-and-conquer to sort an array.
+    /// The algorithm picks a pivot element, A[q], and then rearranges the array into two subarrays A[p...q-1], 
+    /// such that all elements are less than A[q], and A[q+1...r], such that all elements are greater than or equal to A[q].
     /// Average complexity is O(NlogN).
     /// </summary>
     public class QuickSort
     {
         public static void SortRecursive(int[] arr, int low, int high)
         {
+            if (arr == null)
+                return;
+
             if (low < high)
             {
                 int pi = Partition(arr, low, high);
@@ -24,6 +30,9 @@ namespace Algos
 
         public static void SortIterative(int[] arr)
         {
+            if (arr == null)
+                return;
+
             Stack<int> stack = new Stack<int>();
 
             // Push low & high index of arr in stack.
@@ -61,19 +70,12 @@ namespace Algos
                 if (arr[i] < pivot)
                 {
                     j++;
-                    Swap(arr, i, j);
+                    Helper.Swap(arr, i, j);
                 }
             }
 
-            Swap(arr, j + 1, high);
+            Helper.Swap(arr, j + 1, high);
             return j + 1;
-        }
-
-        private static void Swap(int[] data, int position1, int position2)
-        {
-            int temp = data[position1];
-            data[position1] = data[position2];
-            data[position2] = temp;
         }
 
         public static void SortIterativeWithTwoMarkersPartition(int[] arr)
