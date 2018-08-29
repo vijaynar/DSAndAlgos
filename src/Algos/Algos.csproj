@@ -47,5 +47,8 @@
     <Compile Include="BubbleSort.cs" />
     <Compile Include="QuickSort.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Algos.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

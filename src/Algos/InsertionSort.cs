@@ -18,13 +18,13 @@ namespace Algos
             if (arr == null)
                 return;
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] > arr[j])
-                {
-                    Helper.Swap(arr, i, j);
-                }
-            }
+            ////for (int i = 0; i < arr.Length; i++)
+            ////{
+            ////    if (arr[i] > arr[j])
+            ////    {
+            ////        Helper.Swap(arr, i, j);
+            ////    }
+            ////}
         }
 
         public static void SortRecursive(int[] arr, int n)

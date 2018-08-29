@@ -14,10 +14,6 @@ namespace UnitTest
         {
             QuickSort.SortRecursive(arr, 0, arr.Length - 1);
             QuickSort.SortIterative(arr);
-            foreach (var i in arr)
-            {
-                Console.Write(i + " ");
-            }
         }
 
         [TestMethod]
@@ -25,20 +21,19 @@ namespace UnitTest
         {
             //BubbleSort.SortIterative(arr);
             BubbleSort.SortRecursive(arr,arr.Length);
-            foreach (var i in arr)
-            {
-                Console.Write(i + " ");
-            }
+        }
+
+        [TestMethod]
+        public void Test_MergeSort()
+        {
+            //BubbleSort.SortIterative(arr);
+            BubbleSort.SortRecursive(arr, arr.Length);
         }
 
         [TestMethod]
         public void Test_InsertionSort()
         {
             InsertionSort.SortIterative(arr);
-            foreach (var i in arr)
-            {
-                Console.Write(i + " ");
-            }
         }
     }
 }

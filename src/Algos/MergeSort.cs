@@ -31,21 +31,50 @@ namespace Algos
         {
             if (arr == null)
                 return;
-
         }
         private void Merge(int[] arr, int low, int mid, int high)
         {
-            int start = low;
-            int end = high;
+            int arr1Start = low;
+            int arr2Start = mid+1;
+            int i = 0;
+
             int[] tempArr = new int[high - low + 1];
-            //while(low<mid+1 && )
-            for (int i = low; i < high; i++)
+            
+            // While both arrays are empty compare and fill temp array.
+            while(arr1Start<=mid && arr2Start <high)
             {
-                if (arr[i] < arr[mid+1])
+                if(arr[arr1Start]<arr[arr2Start])
                 {
-                    i++;
+                    tempArr[i++] = arr[arr1Start++];
+                }
+                else
+                {
+                    tempArr[i++] = arr[arr2Start++];
                 }
             }
+
+            // Fill up remaining items from arr1 to temp array.
+            while (arr1Start <= mid)
+            {
+                tempArr[i++] = arr[arr1Start++];
+            }
+
+            // Fill up remaining items from arr2 to temp array.
+            while (arr2Start < high)
+            {
+                tempArr[i++] = arr[arr2Start++];
+            }
+
+            // Fill up original array again.
+            for(int j=0;j<tempArr.Length;j++)
+            {
+                arr[j] = tempArr[j];
+            }
+        }
+
+        private void MergeWithO1ExtraSpace(int[] arr, int low, int mid, int high)
+        {
+
         }
     }
 }
