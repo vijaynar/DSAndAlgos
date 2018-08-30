@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Linq;
 using Algos;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class SortingTests
     {
         private int[] arr = { 40, 10, 80, 30, 90, 50, 70 };
 
@@ -35,6 +36,20 @@ namespace UnitTest
         {
             //InsertionSort.SortIterative(arr);
             InsertionSort.SortRecursive(arr, arr.Length);
+        }
+
+        [TestMethod]
+        public void Test_SelectionSort()
+        {
+            SelectionSort.SortIterative(arr);
+            SelectionSort.SortRecursive(arr, arr.Length);
+        }
+
+        [TestMethod]
+        public void Test_HeapSort()
+        {
+            HeapSort.SortIterative(arr);
+            HeapSort.SortRecursive(arr, arr.Length);
         }
     }
 }

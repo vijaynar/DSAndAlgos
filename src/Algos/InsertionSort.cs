@@ -47,15 +47,15 @@ namespace Algos
 
             SortRecursive(arr, n - 1);
 
-            int last = arr[n-1];
+            int last = arr[n - 1];
             int j = n - 2;
-            while (last < arr[j+1] && j >= 0)
+            while (j >= 0 && last < arr[j])
             {
-                arr[j+1] = arr[j];
+                arr[j + 1] = arr[j];
                 j--;
             }
 
-            arr[j+1] = last;
+            arr[j + 1] = last;
         }
     }
 }

@@ -2,19 +2,18 @@
 *Done*
 -Quick Sort
 -Bubble Sort
+-Recursive Bubble Sort
 -Merge Sort
-
-*InProgress*
 -Insertion Sort
 -Selection Sort
 
+*InProgress*
+-Heap Sort
+
 *Pending*
--Selection Sort
--Recursive Bubble Sort
 -Recursive Insertion Sort
 -Iterative Merge Sort
 -Iterative Quick Sort
--Heap Sort
 -Counting Sort
 -Radix Sort
 -Bucket Sort
