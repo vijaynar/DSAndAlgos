@@ -33,7 +33,8 @@ namespace UnitTest
         [TestMethod]
         public void Test_InsertionSort()
         {
-            InsertionSort.SortIterative(arr);
+            //InsertionSort.SortIterative(arr);
+            InsertionSort.SortRecursive(arr, arr.Length);
         }
     }
 }

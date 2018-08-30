@@ -32,7 +32,7 @@ namespace Algos
                     }
                 }
 
-                Helper.Swap(arr, i, j);
+                Helper.Swap(arr, i, min);
             }
 
         }

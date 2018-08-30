@@ -1,8 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+Reference:
+https://www.programiz.com/dsa/insertion-sort
+
+Summary:
+Step 1: The second element of an array is compared with the elements that appears before it (only first element in this case). If the second element is smaller than first element, second element is inserted in the position of first element. After first step, first two elements of an array will be sorted.
+Step 2: The third element of an array is compared with the elements that appears before it (first and second element). If third element is smaller than first element, it is inserted in the position of first element. If third element is larger than first element but, smaller than second element, it is inserted in the position of second element. If third element is larger than both the elements, it is kept in the position as it is. After second step, first three elements of an array will be sorted.
+Step 3: Similary, the fourth element of an array is compared with the elements that appears before it (first, second and third element) and the same procedure is applied and that element is inserted in the proper position. After third step, first four elements of an array will be sorted.
+
+Time Complexity:
+Average = O(?).
+Worst = O(?).
+
+Space Complexity = O(?)
+*/
 
 namespace Algos
 {
@@ -32,19 +42,20 @@ namespace Algos
             if (arr == null)
                 return;
 
-            if (n == 1)
+            if (n <= 1)
                 return;
 
-            for (int i = 0; i < arr.Length - 1; i++)
+            SortRecursive(arr, n - 1);
+
+            int last = arr[n-1];
+            int j = n - 2;
+            while (last < arr[j+1] && j >= 0)
             {
-                for (int j = i + 1; j < arr.Length; j++)
-                {
-                    if (arr[i] > arr[j])
-                    {
-                        Helper.Swap(arr, i, j);
-                    }
-                }
+                arr[j+1] = arr[j];
+                j--;
             }
+
+            arr[j+1] = last;
         }
     }
 }
