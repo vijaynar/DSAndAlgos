@@ -1,6 +1,7 @@
 ﻿/*
 Reference:
 https://www.programiz.com/dsa/heap-sort
+https://www.hackerearth.com/practice/algorithms/sorting/heap-sort/tutorial/
 
 Summary:
 Relationship between array indexes and tree elements:

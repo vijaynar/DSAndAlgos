@@ -1,22 +1,22 @@
 ﻿##### Sorting Algos #####
 *Done*
 -Quick Sort
+-Iterative Quick Sort
 -Bubble Sort
 -Recursive Bubble Sort
 -Merge Sort
 -Insertion Sort
 -Selection Sort
+-Heap Sort
 
 *InProgress*
--Heap Sort
+-Bucket Sort
 
 *Pending*
 -Recursive Insertion Sort
 -Iterative Merge Sort
--Iterative Quick Sort
 -Counting Sort
 -Radix Sort
--Bucket Sort
 -ShellSort
 -TimSort
 -Comb Sort
