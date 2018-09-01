@@ -49,7 +49,14 @@ namespace UnitTest
         public void Test_HeapSort()
         {
             HeapSort.SortIterative(arr);
-            HeapSort.SortRecursive(arr, arr.Length);
+            //HeapSort.SortRecursive(arr, arr.Length);
+        }
+
+        [TestMethod]
+        public void Test_BucketSort()
+        {
+            HeapSort.SortIterative(arr);
+            //HeapSort.SortRecursive(arr, arr.Length);
         }
     }
 }
