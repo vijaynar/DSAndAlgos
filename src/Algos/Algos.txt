@@ -8,9 +8,11 @@
 -Insertion Sort
 -Selection Sort
 -Heap Sort
+-Bucket Sort
 
 *InProgress*
--Bucket Sort
+-Linear Search
+-Binary Search
 
 *Pending*
 -Recursive Insertion Sort
@@ -45,8 +47,6 @@
 
 
 ##### Searching Algos #####
--Linear Search
--Binary Search
 -Jump Search
 -Interpolation Search
 -Exponential Search
@@ -56,3 +56,16 @@
 -Recursive program to linearly search an element in a given array
 -Recursive function to do substring search
 -Unbounded Binary Search Example (Find the point where a monotonically increasing function becomes positive first time)
+
+##### Misc #####
+-Brute-Force	https://www.csharpstar.com/csharp-brute-force-algorithm/
+-Knapsack problem	https://www.csharpstar.com/csharp-knapsack-problem/
+-Bellman-Ford	https://www.csharpstar.com/bellman-ford-algorithm-csharp/
+-Floyd-warshall	https://www.csharpstar.com/floyd-warshall-algorithm-csharp/
+-Dijkstra	https://www.csharpstar.com/dijkstra-algorithm-csharp/
+-BFS using Queue	https://www.csharpstar.com/csharp-breadth-first-search/
+-DFS using List	https://www.csharpstar.com/csharp-depth-first-seach-using-list/
+-Huffman using dictionary	https://www.csharpstar.com/csharp-huffman-coding-using-dictionary/
+-Coin change problem using Greedy algorithm	https://www.csharpstar.com/csharp-coin-change-problem-greedy-algorithm/
+-hash data/password using salt	https://www.csharpstar.com/csharp-hash-data-using-salt/
+-(Rijndael Algorithm)Encrypt and Decrypt data using a symmetric key	https://www.csharpstar.com/csharp-encrypt-and-decrypt-data-using-symmetric-key/

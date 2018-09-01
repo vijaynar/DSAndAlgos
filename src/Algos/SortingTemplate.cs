@@ -25,12 +25,16 @@ namespace Algos
         {
             if (arr == null)
                 return;
+
+            throw new NotImplementedException();
         }
 
         public static void SortRecursive(int[] arr, int n)
         {
             if (arr == null)
                 return;
+
+            throw new NotImplementedException();
         }
     }
 }

@@ -35,6 +35,7 @@ namespace Algos
             if (arr == null)
                 return;
 
+            // Define bucket size and create empety buckets.
             int bucketSize = 10;
             List<int>[] buckets = new List<int>[bucketSize];
             for (int i = 0; i < buckets.Length; i++)
@@ -42,15 +43,22 @@ namespace Algos
                 buckets[i] = new List<int>();
             }
 
+            // Distribute data in buckets.
             for (int i = 0; i < arr.Length; i++)
             {
                 int bucketNo = arr[i] / bucketSize;
-                buckets[bucketNo].Add(i);
+                buckets[bucketNo].Add(arr[i]);
             }
 
+            // Sort each bucket and fill sorted data back in array.
+            int k = 0;
             for (int i = 0; i < buckets.Length; i++)
             {
                 QuickSort.SortIterative(buckets[i].ToArray());
+                for(int j=0;j<buckets[i].Count;j++)
+                {
+                    arr[k++] = buckets[i][j];
+                }
             }
         }
 
@@ -58,6 +66,8 @@ namespace Algos
         {
             if (arr == null)
                 return;
+
+            throw new NotImplementedException();
         }
     }
 }
