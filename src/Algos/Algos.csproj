@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array\ArrayProblems.cs" />
     <Compile Include="BucketSort.cs" />
     <Compile Include="Search\BinarySearch.cs" />
     <Compile Include="Search\Template.cs" />
