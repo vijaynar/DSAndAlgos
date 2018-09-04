@@ -15,7 +15,16 @@ namespace UnitTest
         [TestMethod]
         public void Test_LinearSearch()
         {
-            ArrayProblems.Rotate(arr, 15);
+            ArrayProblems.RotateArrayByxElements(arr, 15);
         }
+
+        [TestMethod]
+        public void Test_FindIfPairExistForSumX()
+        {
+            int sum = 800;
+            bool result = ArrayProblems.FindIfPairExistForSumXUsingSorting(arr, sum);
+            result = ArrayProblems.FindIfPairExistForSumXUsingHashing(arr, sum);
+        }
+
     }
 }
