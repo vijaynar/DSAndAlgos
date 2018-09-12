@@ -1,0 +1,28 @@
+Hashing
+-Problem
+-Solutions:
+--Array
+--Linked List
+--balanced binary search tree
+--direct access table
+-intro
+-Hash Function
+--Efficiently Computable
+--Should uniformally distribute keys
+-Hash Table
+-Load factor
+-Collision Handling:
+--Chaining
+--- The idea is to make each cell of hash table point to a linked list of records that have same hash function value. Chaining is simple, but requires additional memory outside the table.
+--Open Addressing - In open addressing, all elements are stored in the hash table itself. Each table entry contains either a record or NIL. When searching for an element, we one by one examine table slots until the desired element is found or it is clear that the element is not in the table.
+---Linear Probing - In linear probing, we linearly probe for next slot. For example, typical gap between two probes is 1.
+----Easy to implement
+----Best cache performance
+----Sufferrs from clustering: The main problem with linear probing is clustering, many consecutive elements form groups and it starts taking time to find a free slot or to search an element.
+---Double Hashing - We use another hash function hash2(x) and look for i*hash2(x) slot in i’th rotation.
+----poor cache performance
+----No clustering
+----Requires more computation time as two hash functions need to be computed.
+---Quadratic Probing -  We look for i2‘th slot in i’th iteration.
+----Average cache performance
+----Sufferrs from lesser clustering

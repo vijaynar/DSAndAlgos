@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HashingTests.cs" />
     <Compile Include="ArrayTests.cs" />
     <Compile Include="SearchingTests.cs" />
     <Compile Include="SortingTests.cs" />
